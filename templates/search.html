@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<form class="form-inline md-form mr-auto mb-4 text-center" method="GET">
+    <input name="student" class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+    <button class="btn-primary btn btn-elegant btn-rounded btn-sm my-0" type="submit">Search</button>
+</form>
+
+<ul class="list-group">
+<br>
+{% for result in student_list_result %}
+   <li class="list-group-item">
+    {{result}}
+   </li>
+{% endfor %}
+
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+
+{% block body %}
+<h1>
+    Hello Students
+</h1>
+
+<ul class="list-group">
+    {% for name,age in alumnos.items() %}
+        <li class="list-group-item">
+            {{name}}
+            <span class="badge badge-pill badge-primary">{{age}}</span>
+        </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

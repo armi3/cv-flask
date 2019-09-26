@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<h1>Ages</h1>
+
+{% if average is defined %}
+<h2>Average: {{average}}</h2>
+{% endif %}
+
+<ul class="list-group">
+    {% for student,age in alumnos.items() %}
+        <li class="list-group-item lead">
+            <a class="text-info">{{loop.index}}.</a>    {{age}}
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}
