@@ -1,10 +1,25 @@
 <!-- experience.html -->
 {% extends 'layout.html' %}
-{% set tab_title = section_titles[3] %}
 
-{% block content %}
-<div class="container">
-<h1>My Lame site</h1>
-    <p>Hello, and welcome to my lame site! I'm so glad you're here. I'm so lonely.</p>
+{% block body %}
+{% set title = "Experience 🏄‍♂️" %}
+{% set profile = 0 %}
+<title>{{title}}</title>
+<div id="content_container">
+    <!-- TITLE -->
+    <div class="block">
+        <h1>{{title}}</h1>
+    </div>
+    <!-- INSTITUTIONS -->
+    {% for key, value in info['experience'].items() %}
+    <div class="block">
+        <h2>{{key}}</h2>
+        <ul>
+            {% for i in value %}
+            <li>{{i}}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endfor %}
 </div>
 {% endblock %}

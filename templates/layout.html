@@ -15,19 +15,17 @@
         <!-- LEFT COL -->
         <div id="left_col">
             <div class="profile_frame">
-                <div class="profile_picture"></div>
-                <!-- <img src="images/javier_latorre.jpg" alt="profile picture"> -->
+                <img src="https://66.media.tumblr.com/tumblr_lxdcnrXNIl1r04zaro1_400.jpg" alt="profile picture" class="profile_picture">
             </div>
             <div class="hello_content">
                 <h2>Hello!</h2>
-                <p>I'm passionate about technology and human behavior, hardworker and a fast-learner with experience in around 10 different countries studying, working and volunteering.</p>
+                <p>{{info['bar']['bio']}}</p>
             </div>
             <div class="get_social_content">
                 <h2>Get social</h2>
                 <ul class="social_icons horizontal_list">
-                    <li><a class="facebook" href="https://www.facebook.com/jlalovi"><span class="entypo-facebook-circled"></span><span class="invisible">Facebook</span></a></li>
-                    <li><a class="twitter" href="https://twitter.com/jlalovi"><span class="entypo-twitter-circled"></span><span class="invisible">Twitter</span></a></li>
-                    <li><a class="linkedin" href="https://www.linkedin.com/in/jlalovi/en"><span class="entypo-linkedin-circled"></span><span class="invisible">LinkedIn</span></a></li>
+                    <li><a class="twitter" href={{info['bar']['twitter']}}><span class="entypo-twitter-circled"></span><span class="invisible">Twitter</span></a></li>
+                    <li><a class="linkedin" href={{info['bar']['linkedin']}}><span class="entypo-linkedin-circled"></span><span class="invisible">LinkedIn</span></a></li>
                 </ul>
             </div>
         </div>

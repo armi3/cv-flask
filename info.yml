@@ -1,3 +1,9 @@
+bar:
+  picture: https://twitter.com/Hotfixr/photo
+  bio: Six years developing software, experience with Java, Python, Swift, C/C++, blockchain, IoT and Cloud Architecture, as well as Scrum and DevOps practices.
+  twitter: https://twitter.com/hotfixr
+  linkedin: https://www.linkedin.com/in/fernandagonzalez95/
+
 profile:
   about: Until now, in my life, I change from active moments with a lot of variety, challenges and improvisations, to moments of tranquility and stability, being difficult to stay in a place during a long time. I consider myself a tolerant and respectful person with open mind and quite honest. I really like to listen people stories and backgrounds and their different experiences around the world.
 
@@ -18,3 +24,35 @@ profile:
     - Analogue photography
     - Cyberpunk
     - Poetry
+
+education:
+  Universidad Francisco Marroquín:
+    - Undergrad
+    - Computer Science
+    - 2018-2021
+  Universidad del Valle de Guatemala:
+    - Undergrad
+    - Electronic Engineering
+    - 2014-2016
+
+experience:
+  Eureka Consulting Group:
+    - Chief Operations Officer
+    - 2019-today
+    - Getting things done for a guatemalan based global start-up.
+  Internet Society:
+    - IGF Youth Ambassador
+    - 2019-2020
+    - Ambassador at the UN's annual Internet Governance Forum in Berlin.
+  Power Puff Devs:
+    - Co-founder
+    - 2019-today
+    - Doing consulting and engineering for tomorrow's problems.
+  Sophos:
+    - Librarian
+    - 2017
+    - Experience doing cash work, writting book reviews and organizing cultural events and workshops.
+  Agrocentro:
+    - Logistics and Distribution trainee
+    - 2017
+    - Reporting, personnel and fleet management and control, seed management certified by Monsanto.
