@@ -1,5 +1,6 @@
-from flask import Flask, render_template, request, jsonify
-import yaml, os, optparse, sys
+import os
+import yaml
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
