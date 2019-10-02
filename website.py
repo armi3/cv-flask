@@ -1,28 +1,28 @@
 from flask import Flask, render_template, request, jsonify
-import os, optparse, sys
+import yaml, os, optparse, sys
 
 app = Flask(__name__)
 
 developer = os.getenv("DEVELOPER", "Fer González")
 environment = os.getenv("ENVIRONMENT", "development")
 
+with open('info.yml') as f:
+    info = yaml.load(f, Loader=yaml.FullLoader)
+
 
 @app.route("/")
-def info():
-    yml_info = 0
-    return render_template("info.html", yml_info=yml_info)
+def profile():
+    return render_template("profile.html", info=info)
 
 
-@app.route("/studies")
-def studies():
-    institutions = 0
-    return render_template("studies.html", institutions=institutions)
+@app.route("/education")
+def education():
+    return render_template("education.html", info=info)
 
 
 @app.route("/experience")
 def experience():
-    xps = 0
-    return render_template("experience.html", xps=xps)
+    return render_template("experience.html", info=info)
 
 
 if __name__ == "__main__":
